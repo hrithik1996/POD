@@ -78,3 +78,4 @@ C:\Users\Hrithik Kumar\source\repos\PODApi\PODApi\obj\Debug\net6.0\PODApi.genrun
 C:\Users\Hrithik Kumar\source\repos\PODApi\PODApi\bin\Debug\net6.0\Utilities.dll
 C:\Users\Hrithik Kumar\source\repos\PODApi\PODApi\bin\Debug\net6.0\Utilities.pdb
 C:\Users\Hrithik Kumar\source\repos\PODApi\PODApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApi\obj\Debug\net6.0\PODApi.csproj.CopyComplete
