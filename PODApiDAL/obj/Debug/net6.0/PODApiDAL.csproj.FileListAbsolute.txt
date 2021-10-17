@@ -1,0 +1,14 @@
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\bin\Debug\net6.0\PODApiDAL.deps.json
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\bin\Debug\net6.0\PODApiDAL.runtimeconfig.json
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\bin\Debug\net6.0\PODApiDAL.dll
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\bin\Debug\net6.0\ref\PODApiDAL.dll
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\bin\Debug\net6.0\PODApiDAL.pdb
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.AssemblyInfoInputs.cache
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.AssemblyInfo.cs
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.csproj.CoreCompileInputs.cache
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.dll
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\ref\PODApiDAL.dll
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.pdb
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.genruntimeconfig.cache
+C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiDAL\obj\Debug\net6.0\PODApiDAL.csproj.AssemblyReference.cache

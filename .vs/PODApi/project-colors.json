@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7ba2f4c2-cb2f-47dd-b9b2-4aa03356932e": {
+      "ProjectGuid": "7ba2f4c2-cb2f-47dd-b9b2-4aa03356932e",
+      "DisplayName": "PODApiDAL",
+      "ColorIndex": 0
+    },
+    "fb58e9d1-2b4d-45d3-98bf-b81422ed8b9d": {
+      "ProjectGuid": "fb58e9d1-2b4d-45d3-98bf-b81422ed8b9d",
+      "DisplayName": "PODApi",
+      "ColorIndex": 1
+    },
+    "db982041-dc0e-40ee-9573-98110c4bcb5a": {
+      "ProjectGuid": "db982041-dc0e-40ee-9573-98110c4bcb5a",
+      "DisplayName": "PODApiBLL",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "ce6679c0-3e72-466f-b6be-6c1f35df6264": {
+      "ProjectGuid": "ce6679c0-3e72-466f-b6be-6c1f35df6264",
+      "DisplayName": "Utilities",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
