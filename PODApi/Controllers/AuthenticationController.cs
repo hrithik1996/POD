@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PODApiBLL.IServices;
 using PODApiDAL.Dtos;
+using PODApiDAL.Dtos.Request;
 using System;
 using System.Threading.Tasks;
 using Utilities.CommonUtilities;
@@ -57,6 +58,22 @@ public class AuthenticationController : ControllerBase
         {
             var userProfile = await user.GetUserProfile(userId);
             return Ok(userProfile);
+        }
+        catch(Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    [HttpPut]
+    [Authorize]
+    [Route(ApiRouteInfo.UpdateProfile)]
+    public async Task<IActionResult> UpdateUserProfile(UpdateUserProfile updateUserProfile)
+    {
+        try
+        {
+            var updateProfile = await user.UpdateProfileAsync(updateUserProfile);
+            return Ok(updateProfile);
         }
         catch(Exception ex)
         {

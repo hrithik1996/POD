@@ -16,4 +16,3 @@ C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiBLL\obj\Debug\net6.0\PODApiBLL.
 C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiBLL\obj\Debug\net6.0\PODApiBLL.genruntimeconfig.cache
 C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiBLL\bin\Debug\net6.0\Utilities.dll
 C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiBLL\bin\Debug\net6.0\Utilities.pdb
-C:\Users\Hrithik Kumar\source\repos\PODApi\PODApiBLL\obj\Debug\net6.0\PODApiBLL.csproj.CopyComplete

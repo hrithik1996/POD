@@ -29,8 +29,6 @@ namespace PODApiDAL.DataContext
         }
         public static OptionBuild ops = new OptionBuild();
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
-
-        //public DbSet<User> Users { get; set; }
         public DbSet<IdentityUser> ApplicaionUsers {get;set;}
         public DbSet<UserProfile> UserProfiles { get; set;  }
         public DbSet<UserFollowerMapping> UserFollowerMappings {  get; set;  }

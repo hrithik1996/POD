@@ -12,6 +12,7 @@ using PODApiBLL.IServices;
 using PODApiDAL.Common;
 using PODApiDAL.DataContext;
 using PODApiDAL.Dtos;
+using PODApiDAL.Dtos.Request;
 using PODApiDAL.Dtos.Response;
 using PODApiDAL.Entities;
 using Utilities.CommonUtilities;
@@ -220,6 +221,42 @@ namespace PODApiBLL.Services
                 applicationResponse.Status = false;
                 applicationResponse.StatusCode = System.Net.HttpStatusCode.NotFound;
                 applicationResponse.Message = ex.Message;
+            }
+            return applicationResponse;
+        }
+
+        public async Task<ApplicationResponse> UpdateProfileAsync(UpdateUserProfile updateUserProfile)
+        {
+            try
+            {
+                var user = await userManager.FindByIdAsync(updateUserProfile.UserId);
+                if(user == null)
+                {
+                    applicationResponse.Status = false;
+                    applicationResponse.Message = MessagesUtility.NoProfile;
+                    applicationResponse.StatusCode = System.Net.HttpStatusCode.OK;
+                }
+                else
+                {
+                    var profileUpdate = databaseContext.UserProfiles.First(x => x.UserId == Guid.Parse(user.Id));
+
+                    profileUpdate.Name = updateUserProfile.Name;
+                    profileUpdate.CompanyName = updateUserProfile.CompanyName;
+                    profileUpdate.Message = updateUserProfile.Message;
+                    profileUpdate.Occupation = updateUserProfile.Occupation;
+
+                    var result = await databaseContext.SaveChangesAsync();
+
+                    applicationResponse.Status = true;
+                    applicationResponse.Message = MessagesUtility.Success;
+                    applicationResponse.StatusCode = System.Net.HttpStatusCode.OK;
+                }
+            }
+            catch(Exception ex)
+            {
+                applicationResponse.Status = false;
+                applicationResponse.Message = ex.Message;
+                applicationResponse.StatusCode = System.Net.HttpStatusCode.BadRequest;
             }
             return applicationResponse;
         }

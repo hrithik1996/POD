@@ -24,10 +24,5 @@ namespace PODApiDAL.Dtos
         public string Role { get; set; }
         [Required]
         public string Password { get; set; }
-
-        
-        
-
-
     }
 }
