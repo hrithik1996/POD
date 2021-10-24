@@ -61,6 +61,7 @@ namespace PODApiBLL.Services
                     var authClaims = new List<Claim>
                     {
                         new Claim(ClaimTypes.Name, user.UserName),
+                        new Claim("Id",user.Id),
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                     };
 
@@ -225,11 +226,11 @@ namespace PODApiBLL.Services
             return applicationResponse;
         }
 
-        public async Task<ApplicationResponse> UpdateProfileAsync(UpdateUserProfile updateUserProfile)
+        public async Task<ApplicationResponse> UpdateProfileAsync(UpdateUserProfile updateUserProfile, string userId)
         {
             try
             {
-                var user = await userManager.FindByIdAsync(updateUserProfile.UserId);
+                var user = await userManager.FindByIdAsync(userId);
                 if(user == null)
                 {
                     applicationResponse.Status = false;

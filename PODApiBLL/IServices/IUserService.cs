@@ -15,6 +15,6 @@ namespace PODApiBLL.IServices
         Task<ApplicationResponse> RegisterUser(RegisterUserModal registerUser);
         Task<ApplicationResponse> LoginUser(LoginUserModal loginUser);
         Task<ApplicationResponse> GetUserProfile(string userId);
-        Task<ApplicationResponse> UpdateProfileAsync(UpdateUserProfile updateUserProfile);
+        Task<ApplicationResponse> UpdateProfileAsync(UpdateUserProfile updateUserProfile, string userId);
     }
 }

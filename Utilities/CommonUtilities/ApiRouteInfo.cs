@@ -13,5 +13,8 @@ namespace Utilities.CommonUtilities
         public const string LoginUser = "LoginUser";
         public const string GetUserProfile = "GetUserProfile";
         public const string UpdateProfile = "UpdateProfile";
+
+        public const string CreatePost = "CreatePost";
+        public const string GetPost = "GetPost";
     }
 }

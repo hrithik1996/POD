@@ -26,6 +26,7 @@ builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<DatabaseContext>().AddDefaultTokenProviders();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IPostService, PostService>();
 
 builder.Services.AddCors();
 

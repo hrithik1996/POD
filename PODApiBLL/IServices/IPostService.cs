@@ -11,8 +11,9 @@ namespace PODApiBLL.IServices
 {
     public interface IPostService
     {
-        Task<ApplicationResponse> CreatePost(PostModal postModal);
-        Task<ApplicationResponse> UpdatePost(PostModal postModal);
+        Task<ApplicationResponse> CreatePost(PostModal postModal, string createdBy);
+        Task<ApplicationResponse> GetPost(string? userId, int? postId);
+        Task<ApplicationResponse> UpdatePost(string userId, PostModal postModal);
         Task<ApplicationResponse> DeletePost(int postId);
         Task<ApplicationResponse> CreateComment(PostCommentModal postCommentModal);
         Task<ApplicationResponse> LikePost(int PostId);

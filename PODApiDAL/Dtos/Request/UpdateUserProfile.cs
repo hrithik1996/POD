@@ -8,7 +8,6 @@ namespace PODApiDAL.Dtos.Request
 {
     public class UpdateUserProfile
     {
-        public string UserId {  get; set; }
         public string Name { get; set; }
         public string Occupation { get; set; }
         public string CompanyName { get; set; }

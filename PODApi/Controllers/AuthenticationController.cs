@@ -52,10 +52,11 @@ public class AuthenticationController : ControllerBase
     [HttpGet]
     [Authorize]
     [Route(ApiRouteInfo.GetUserProfile)]
-    public async Task<IActionResult> GetUserProfile(string userId)
+    public async Task<IActionResult> GetUserProfile()
     {
         try
         {
+            var userId = User.FindFirst("Id").Value;
             var userProfile = await user.GetUserProfile(userId);
             return Ok(userProfile);
         }
@@ -72,7 +73,8 @@ public class AuthenticationController : ControllerBase
     {
         try
         {
-            var updateProfile = await user.UpdateProfileAsync(updateUserProfile);
+            var userId = User.FindFirst("Id").Value;
+            var updateProfile = await user.UpdateProfileAsync(updateUserProfile, userId);
             return Ok(updateProfile);
         }
         catch(Exception ex)
