@@ -21,8 +21,8 @@ namespace PODApi.Controllers
         }
 
         [HttpPost]
-        [Route(ApiRouteInfo.CreatePost)]
         [Authorize]
+        [Route(ApiRouteInfo.CreatePost)]
         public async Task<IActionResult> CreatePost(PostModal postModal)
         {
             try
@@ -38,6 +38,7 @@ namespace PODApi.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route(ApiRouteInfo.GetPost)]
         public async Task<IActionResult> GetPost(int? postId)
         {
@@ -53,6 +54,9 @@ namespace PODApi.Controllers
             }
         }
 
+        [HttpPut]
+        [Authorize]
+        [Route(ApiRouteInfo.UpdateProfile)]
         public async Task<IActionResult> UpdatePost(PostModal postModal)
         {
             try
